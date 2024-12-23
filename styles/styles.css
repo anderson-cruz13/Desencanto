@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap');
+
+:root {
+    --font-primary: 'Krona One', sans-serif;
+    --font-secondary: 'Montserrat', sans-serif;
+    --color-primary: #8267F0;
+    --color-secondary: #F067C3;
+    --color-tertiary: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: var(--color-primary);
+    color: var(--color-tertiary);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.title-highlight{
+    color: var(--color-secondary);
+}
+
+.cabecalho {
+    padding: 2% 0% 0% 15%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__button {
+    font-family: var(--font-secondary);
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: var(--color-tertiary);
+}
+
+.container {
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+    gap: 82px;
+}
+
+.container__content{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 70%;
+}
+
+.container__content__title{
+    font-size: 2.25rem;
+    
+}
+
+.container__content__text{
+    font-size: 1.5rem;
+    font-family: var(--font-secondary);
+}
+
+.container__content__buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.container__content__buttons__title{
+    font-size: 1.5rem;
+    font-family: var(--font-secondary);
+    font-weight: 400;
+}
+
+.button{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--color-secondary);
+    color: var(--color-tertiary);
+    font-size: 1.5rem;
+    font-family: var(--font-secondary);
+    font-weight: 600;
+    width: 280px;
+    text-align: center;
+    border: 2px solid  var(--color-secondary);
+    border-radius: 8px;
+    text-decoration: none;
+    padding: 21.5px 0px;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in, border-color 0.5s ease-in, opacity 0.5s ease-in;
+}
+
+.button:hover{
+    background-color: var(--color-primary);
+    border: 2px solid  var(--color-secondary);
+}
+
+.footer__text{
+    padding: 24px;
+    font-size: 1.5rem;
+    text-align: center;
+    background-color:  var(--color-secondary);
+    font-family: var(--font-secondary);
+    font-weight: 400;
+}
+
+.img{
+    width: 30%;
+}
+
+@media (max-width: 1200px) {
+    .cabecalho{
+        padding: 10%;
+    }
+    .cabecalho__menu{
+        justify-content: center;
+    }
+    .container{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .container__content{
+        width: auto;
+    }
+}
